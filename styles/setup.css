@@ -1,0 +1,74 @@
+@import "basic.css";
+
+body{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+b{
+    color: darkblue
+}
+
+img{
+    display: block;
+    width: 50vw;
+}
+
+header{
+    margin: 1vh;
+}
+
+nav{
+    margin: 3vh auto;
+}
+
+ol{
+    list-style: decimal;
+    padding-left: 40px;
+}
+
+ul{
+    list-style: circle;
+    padding-left: 40px;
+}
+
+.css-list li a{
+    color: darkgray;
+}
+
+.css-list li a:hover{
+    color: blue;
+}
+
+
+.css-list ul li{
+    padding-top: 1vh;
+}
+
+section ol li{
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 1vh;
+}
+
+section ul li{
+    font-size: 16px ;
+    padding-top: 0.5vh;
+}
+.first, .second, .third{
+    margin: 1vh;
+}
+
+h3{
+    margin: 2vh 0;
+    text-decoration: underline blue 2px ;
+}
+
+#item {
+    position: relative;
+    left: 50%;
+    transform: translateX(-25%);
+}
