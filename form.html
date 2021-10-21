@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+    <h1>프론트엔드 개발자 지원서</h1>
+    <p>HTML,CSS,JAVASCRIPT에 대한 기술적 이해와 많은 경험이 있는 분을 찾습니다.</p>
+    <hr>
+    <fieldset>
+        <legend>입사지원서</legend>
+        <h3>개인정보</h3>
+        <ul>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" required
+                                                 minlength="4" maxlength="8" size="10">
+            </li>
+            <li>
+                <label for="phone">연락처</label>
+                <input type="text" id="phone" name="phone" required
+                       minlength="4" maxlength="8" size="10">
+            </li>
+            <li>
+                <label for="department">학과</label>
+                <select name="department" id="department">
+                    <option value="computer_science">컴퓨터공학과</option>
+                    <option value="computer_education">컴퓨터교육과</option>
+                </select>
+            </li>
+        </ul>
+
+        <h3>지원분야</h3>
+        <ul>
+            <li><input type="radio" id="publishing" name="web" value="publishing">
+                <label for="publishing">웹 퍼블리싱</label></li>
+            <li><input type="radio" id="application" name="web" value="application">
+                <label for="application">웹 어플리케이션</label></li>
+            <li><input type="radio" id="development" name="web" value="development">
+                <label for="development">웹 개발 지원</label></li>
+        </ul>
+
+        <h3>지원동기</h3>
+        <label for=""></label><textarea id="" name="" rows="10" cols="50">지원 동기를 작성해주세요.</textarea>
+        <br>
+        <button>접수하기</button>
+        <button>다시작성</button>
+    </fieldset>
+</body>
+</html>
