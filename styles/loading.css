@@ -1,0 +1,54 @@
+@charset "utf-8";
+:root {
+    --color1: #CCCCFF;
+    --color2: #6495ED;
+    --color3: #40d0e0;
+    --color4: #9fe3bf;
+    --color5: #DE3163;
+    --color6: #FF7F50;
+    --color7: #FFBF00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .loader {
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--color5);
+    border-radius: 50%;
+    animation: ani 3s linear infinite;
+    position: relative;
+}
+
+.wrapper .loader::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: var(--color2);
+}
+
+.wrapper p {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}

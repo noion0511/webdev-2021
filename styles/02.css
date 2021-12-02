@@ -1,0 +1,39 @@
+@charset "utf-8";
+:root {
+    --color1: #CCCCFF;
+    --color2: #6495ED;
+    --color3: #40d0e0;
+    --color4: #9fe3bf;
+    --color5: #DE3163;
+    --color6: #FF7F50;
+    --color7: #FFBF00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #111;
+}
+
+.wrapper{
+    width: 300px;
+    height: 500px;
+    background-color: var(--color1);
+}
+
+.wrapper .box {
+    width: 100px;
+    height: 100px;
+    font-size: 3em;
+    text-transform: uppercase;
+    background-color: var(--color2);
+    transform: rotateX(60deg);
+}

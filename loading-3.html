@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/loading-3.css">
+    <style>
+        :root {
+            --color1: #CCCCFF;
+            --color2: #6495ED;
+            --color3: #40d0e0;
+            --color4: #9fe3bf;
+            --color5: #DE3163;
+            --color6: #FF7F50;
+            --color7: #FFBF00;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper .circle{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 3px solid var(--color1);
+            animation: ani 3s linear infinite;
+            border-radius: 90% 10% 94% 6% / 36% 87% 13% 64%;
+        }
+
+        @keyframes ani {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .wrapper .circle:nth-child(2){
+            border: 3px solid var(--color2);
+            animation-delay: 1s;
+            border-radius: 23% 77% 32% 68% / 30% 30% 70% 70%;
+        }
+
+        .wrapper .circle:nth-child(3){
+            border: 3px solid var(--color3);
+            animation-delay: 2s;
+            border-radius: 75% 25% 84% 16% / 23% 87% 13% 77%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <p>loading</p>
+    </div>
+</body>
+</html>
